@@ -9,11 +9,12 @@ const activities = ['soccer', "basketball", "football", "swimming"];
 router.get('/', (req, res, next) => {
     // Request handling
     // CORE CHALLENGE 1 -
-    // HTML page is written
+    // HTML page is written 
     res.write('<html>');
-    res.write('<head><title>Hello Browser!</Title></head>');
+    res.write('<head><title>Hello Browser!</Title>');
+    res.write('<link rel="stylesheet" media="screen" href="/stylesheets/main.css"></head>');
     res.write('<body>');
-    res.write('<h1>Welcome to my world!</h1>');
+    res.write('<h1>Week 1 Team Activity</h1>');
     // navigation to your activities endpoint.
     res.write('<a href="/">Home</a></br>')
     res.write('<a href="ta01/activities">Activities List</a></br>');
@@ -21,6 +22,21 @@ router.get('/', (req, res, next) => {
     res.write('<a href="ta01/stretch-1">Stretch 1 (CSS)</a></br>');
     res.write('<a href="ta01/stretch-2">Stretch 2 (Write Form input to text input)</a></br>');
     res.write('<a href="ta01/stretch-3">Stretch 3 (Add two number inputs together)</a></br>');
+    res.write('<main><pre>"What is the res object?<br>');
+    res.write(' `res.send` is only in Express.js.<br>');
+    res.write(' Performs many useful tasks for simple non-streaming responses.<br>');
+    res.write(' Ability to automatically assigns the `Content-Length` HTTP response header field.<br>');
+    res.write(' Ability to provides automatic HEAD & HTTP cache freshness support.<br>');
+    res.write(' - *Practical explanation*<br>');
+    res.write('    `res.send` can only be called once, since it is equivalent to `res.write` + `res.end()`<br><br>');
+    res.write('- What does res.write do?<br>');
+    res.write('Can be called multiple times to provide successive parts of the body.<br><br>');
+    res.write('- What is the routes directory used for?<br>');
+    res.write('In a MVC system they will be the controllers, where everything is build to execute, following the flow of the code.<br><br>');
+    res.write('- What is the views directory used for?<br>');
+    res.write('All the html pages in .ejs form<br><br>');
+    res.write(' - What is the public directory used for? <br>');
+    res.write('All the static files that clients download as they are from the server are in the directory, public"</pre></main>');
     res.write('</body>');
     res.write('</html>');
     return res.end(); // Return so you don't execute remaining code outside of if statement
@@ -30,6 +46,7 @@ router.get('/', (req, res, next) => {
 router.get('/activities', (req, res, next) => {
     res.write('<html>');
     res.write('<body>');
+    res.write('<a href="/ta01">Back</a></br>');
     res.write('<ul>');
     // Loop through activities using for...of loop to display the list
     for (const activity of activities) {
@@ -39,9 +56,10 @@ router.get('/activities', (req, res, next) => {
     // Form for "./add-activity".
     res.write('<form action="./add-activity" method="POST">');
     res.write('<input type="text" name="newActivity">');
-    res.write('<button type="submit">Submit</button>');
+    res.write('<button type="submit" >Submit</button>');
     res.write('</form>');
     // End tags
+    // res.write('<script src="/js/main.js"></script>');
     res.write('</body>');
     res.write('</html>');
     return res.end(); // Return so you don't execute remaining code outside of if statement
@@ -68,7 +86,7 @@ router.post('/add-activity', (req, res, next) => {
 
 /***************************************************************************
 * STRETCH CHALLENGE SOLUTIONS
-* These are the solutions for the stretch challenges.
+* These are the solutions for the stretch challenges.  
 ***************************************************************************/
 // STRETCH CHALLENGE 1 - Add CSS.
 router.get("/stretch-1", (req, res, next) => {
@@ -78,14 +96,26 @@ router.get("/stretch-1", (req, res, next) => {
     // which we'll be using in the future.)
     res.write('<html>');
     res.write('<head><title>Hello Browser!</Title>');
-    // Really basic styling with some pizzazz....
-    res.write('<style>');
-    res.write('body { background-image: linear-gradient('
-            +'to left, violet, indigo, blue, green, yellow, orange, red); color: White}');
-    res.write('</style>');
-    res.write('</head>');
+       // Really basic styling with some pizzazz
+    res.write('<link rel="stylesheet" media="screen" href="/stylesheets/style.css"></head>');
     res.write('<body>');
+    res.write('<a href="/ta01">Back</a></br>');
     res.write('<h1>Welcome to my world, now in color!</h1>');
+    res.write('<main><pre>"What is the res object?<br>');
+    res.write(' `res.send` is only in Express.js.<br>');
+    res.write(' Performs many useful tasks for simple non-streaming responses.<br>');
+    res.write(' Ability to automatically assigns the `Content-Length` HTTP response header field.<br>');
+    res.write(' Ability to provides automatic HEAD & HTTP cache freshness support.<br>');
+    res.write(' - *Practical explanation*<br>');
+    res.write('    `res.send` can only be called once, since it is equivalent to `res.write` + `res.end()`<br><br>');
+    res.write('- What does res.write do?<br>');
+    res.write('Can be called multiple times to provide successive parts of the body.<br><br>');
+    res.write('- What is the routes directory used for?<br>');
+    res.write('In a MVC system they will be the controllers, where everything is build to execute, following the flow of the code.<br><br>');
+    res.write('- What is the views directory used for?<br>');
+    res.write('All the html pages in .ejs form<br><br>');
+    res.write(' - What is the public directory used for? <br>');
+    res.write('All the static files that clients download as they are from the server are in the directory, public"</pre></main>');
     res.write('</body>');
     res.write('</html>');
 
@@ -99,12 +129,15 @@ router.get("/stretch-2", (req, res, next) => {
     // No post request, just write the form page...
     res.write('<html>');
     res.write('<body>');
+    res.write('<a href="/ta01">Back</a></br>');
+    res.write('<h1> Write to file</h1>');
     // Form for "./stretch-2 POST request".
     res.write('<form action="./stretch-2" method="POST">');
     res.write('<input type="text" name="message">');
     res.write('<button type="submit">Submit</button>');
     res.write('</form>');
     // End tags
+    res.write('<script src="/js/main.js"></script>');
     res.write('</body>');
     res.write('</html>');
     return res.end(); // Remember to end the response!
@@ -133,13 +166,17 @@ router.get("/stretch-3", (req, res, next) => {
     // Same routine from stretch-2 on the POST requests...
     res.write('<html>');
     res.write('<body>');
-    // Form for "./stretch-2 POST request".
+    res.write('<a href="/ta01">Back</a></br>');
+    res.write('<h1>Add two numbers</h1>');
+    // Form for "./stretch-3 POST request".
     res.write('<form action="./stretch-3" method="POST">');
-    res.write('<input type="number" name="op1">+');
+    res.write('<input type="number" name="op1">');
     res.write('<input type="number" name="op2">');
-    res.write('<button type="submit">Submit</button>');
+    res.write('<button type="submit" id="add2" >Submit</button>');
+    res.write('<input type="hidden" name="action" value="add2"></input>');
     res.write('</form>');
     // End tags
+    res.write('<script src="js/main.js"></script> ');
     res.write('</body>');
     res.write('</html>');
     return res.end(); // Remember to end the response!
@@ -155,7 +192,7 @@ router.post("/stretch-3", (req, res, next) => {
     return req.on('end', () => {
         // A let is appropriate here because we'll be modifying it.
         let parsedBody = Buffer.concat(body).toString();
-        parsedBody = parsedBody.split('&'); // Seperate key-val pairs
+        parsedBody = parsedBody.split('&'); // Separate key-val pairs
         const values = []; // Array to store retrieved values.
         for (let key_val_pair of parsedBody) {
         console.log('KeyVal pair: ' + key_val_pair);
