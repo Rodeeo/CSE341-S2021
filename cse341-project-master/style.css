@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    
+  }
+  
+  a  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: darkblue
+  }
+  
+  body { 
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+    color: White;
+  }
+  
+  li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: darkblue
+  
+}
+pre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: darkblue
+  }
