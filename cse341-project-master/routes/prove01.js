@@ -1,4 +1,7 @@
 const fs = require('fs');
+const express = require('express');
+const router = express.Router();
+const bodyParser = require('body-parser'); 
 const users = ["User 1","User 2"];
 
 const requestHandler = (req, res)=> {
@@ -35,6 +38,16 @@ const requestHandler = (req, res)=> {
     const body = [];
     req.on('data', chunk => {
         body.push(chunk);
+        res.redirect('/users');
+    });
+
+    router.get('/', (req, res, next) => {
+        res.render('pages/prove01.ejs',{
+            title: 'Create User',
+            path: '/create-user',
+            contentCSS: true,
+        })
+        return res.end(); // Return so you don't execute remaining code outside of if statement
     });
 
     return req.on('end', () => {

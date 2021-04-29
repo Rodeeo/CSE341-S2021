@@ -18,12 +18,11 @@ router.post('/books', (req,res,next)=>{
     else if(req.body.bookDesc == ''){
         res.redirect('/prove02');
     }
-    else{
-
+    else{        
         res.render('pages/bookShelf.ejs',{
-            title: 'Prove 02: Books',
+            title: 'Prove 02: Your Book Shelf',
             path: '/prove02/books',
-            //bookList: bookObj,
+            //bookList: bookObj, 
             bookTitle: req.body.bookTitle,
             bookDesc: req.body.bookDesc,
             releaseDate: req.body.releaseDate,
