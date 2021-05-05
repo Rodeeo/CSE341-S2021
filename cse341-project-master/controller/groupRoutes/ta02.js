@@ -9,7 +9,7 @@ router.get('/',(req, res, next) => {
         title: 'Team Activity 02', 
         userNames:userNames,
         error:error,
-        path: '/ta02', // For pug, EJS 
+        path: '/groupRoutes/ta02', // For pug, EJS 
         activeTA03: true, // For HBS
         contentCSS: true, // For HBS
     });

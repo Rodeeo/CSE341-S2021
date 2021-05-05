@@ -19,12 +19,14 @@ const PORT = process.env.PORT || 5000 // So we can run on heroku || (OR) localho
 const app = express();
 
 // Route setup. You can implement more in the future!
-const ta01Routes = require('./routes/ta01');
-const ta02Routes = require('./routes/ta02');
-const ta03Routes = require('./routes/ta03'); 
-const ta04Routes = require('./routes/ta04'); 
-const prove01 = require('./routes/prove01');
-const prove02 = require('./routes/prove02');
+const ta01Routes = require('./controller/groupRoutes/ta01');
+const ta02Routes = require('./controller/groupRoutes/ta02');
+const ta03Routes = require('./controller/groupRoutes/ta03'); 
+const ta04Routes = require('./controller/groupRoutes/ta04'); 
+const prove01 = require('./controller/proveRoutes/prove01');
+const prove02 = require('./controller/proveRoutes/prove02');
+const prove03 = require('./controller/proveRoutes/prove03');
+
 
 
 app.use(express.static(path.join(__dirname, 'public')))
@@ -35,13 +37,14 @@ app.use(express.static(path.join(__dirname, 'public')))
    // For view engine as hbs (Handlebars)
    //.engine('hbs', expressHbs({layoutsDir: 'views/layouts/', defaultLayout: 'main-layout', extname: 'hbs'})) // For handlebars
    //.set('view engine', 'hbs')
-   .use(bodyParser({extended: false})) // For parsing the body of a POST
-   .use('/ta01', ta01Routes)
-   .use('/ta02', ta02Routes) 
-   .use('/ta03', ta03Routes) 
-   .use('/ta04', ta04Routes)
-   .use('/prove01', prove01)
-   .use('/prove02', prove02)
+    .use(bodyParser({extended: false})) // For parsing the body of a POST
+   .use('/groupRoutes/ta01', ta01Routes)
+   .use('/groupRoutes/ta02', ta02Routes) 
+   .use('/groupRoutes/ta03', ta03Routes) 
+   .use('/groupRoutes/ta04', ta04Routes)
+   .use('/proveRoutes/prove01', prove01)
+   .use('/proveRoutes/prove02', prove02)
+   .use('/proveRoutes/prove03', prove03)
    .get('/', (req, res, next) => {
      // This is the primary index, always handled last. 
      res.render('pages/index', {title: 'Welcome to my CSE341 repo', path: '/'});

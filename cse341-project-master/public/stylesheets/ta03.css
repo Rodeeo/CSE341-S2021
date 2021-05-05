@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    
+  }
+
+  h2 {
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    
+  }
+  
+  h3 {
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    
+  }
+  
+  h4 {
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    text-align: start;
+  }
+  
+  h5 {
+    text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+
+  }
+  
+  a  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: darkblue
+  }
+  
+
+  li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: darkblue
+  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 1em;
+    max-width: 45em;
+    margin: 10px auto 10px;
+    box-shadow: 0 1px 5px #222;
+    border-radius: 2px;
+}
+
+.taForm {
+    display: flex;
+    padding: 1em 1em 1em;
+    margin: 10px auto 10px;
+
+}
+
+.stillBetterThanAmazon {
+    text-align: center;
+    margin: 15px;
+}
+
+.fail {
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: var(--red);
+}
+
+.success {
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    color: var(--green);
+}
+
+label, input, submit {
+    display: block;
+      box-sizing: border-box;
+      width: 100%;
+      outline: none;
+      padding: 5px;
+      margin-top: 10px;
+      margin:0;
+  
+    }
+
+    hr {
+        border: 1;
+        height: 5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+    }

@@ -1,0 +1,31 @@
+[
+    {
+      "tags": [
+        "Blue"
+      ],
+      "imageUrl": "https://byui-cse.github.io/cse341-course/lesson03/images/1.jpg",
+      "price": 9.99,
+      "name": "Handcrafted Trees Tech",
+      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+    },
+    {
+      "tags": [
+        "Red",
+        "White"
+      ],
+      "imageUrl": "https://byui-cse.github.io/cse341-course/lesson03/images/2.jpg",
+      "price": 9.99,
+      "name": "Rustic Beach Tech",
+      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+    },
+    {
+      "tags": [
+        "Black",
+        "WHite"
+      ],
+      "imageUrl": "https://byui-cse.github.io/cse341-course/lesson03/images/3.jpg",
+      "price": 9.99,
+      "name": "Handcrafted Bear Tech",
+      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+    }
+]
