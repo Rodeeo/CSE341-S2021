@@ -1,34 +1,33 @@
 const express = require('express');
-const fs = require('fs'); 
 const router = express.Router();
-const bodyParser = require('body-parser'); 
-//const jsonfile = require('jsonfile');    
+const https = require('https');
 
-router.use(bodyParser.json())
-router.use(bodyParser.urlencoded({extended: true}))
+let items = [];
+let searchValue = '';
 
-//const file = '../public/data/bookData.json'
-
-
-router.post('/books', (req,res,next)=>{
-    
-    if(req.body.bookTitle == ''){
-        res.redirect('/prove03');
-    }
-    else if(req.body.bookDesc == ''){
-        res.redirect('/prove03');
-    }
-
+router.post('/search', (req, res, next) => {
+    searchValue = req.body.searchValue;
+    res.redirect('/proveRoutes/prove03/', 302);
 });
-
 
 router.get('/', (req, res, next) => {
-    res.render('pages/prove03.ejs',{
-        title: 'Prove 03',
-        path: '/',
-        contentCSS: true,
-    })
-    return res.end(); // Return so you don't execute remaining code outside of if statement
-});
+    https.get('https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/data/shopping.json', (response) => {
+        let data = '';
 
-module.exports = router;
+        response.on('data', (chunk) => {
+            data += chunk;
+        });
+
+        response.on('end', () => {
+            items = (JSON.parse(data));
+            res.render('pages/prove03', {
+                title: 'Prove 03',
+                path: '/controller/proveRoutes/prove03', // For pug, EJS
+                activeTA03: true, // For HBS
+                contentCSS: true, // For HBS
+                items: items,
+                searchValue: searchValue
+            });
+        });
+    });
+});
