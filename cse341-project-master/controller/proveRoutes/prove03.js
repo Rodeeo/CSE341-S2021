@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const https = require('https');
-
 let items = [];
 let searchValue = '';
 
@@ -31,3 +30,5 @@ router.get('/', (req, res, next) => {
         });
     });
 });
+
+module.exports = router;

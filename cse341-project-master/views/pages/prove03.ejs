@@ -6,38 +6,37 @@
 
 <body>
   <% include ../includes/nav.ejs %>
-<div class="jumbotron text-center">
-  <div class="container">
-    <h1><%= title %></h1>
-    
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Week 03 Team Activity, Better Looking Than Amazon</p>
+    </div>
   </div>
-</div>
-<div class="container">
-
-</div>
-
-<div class="container">
-<pre>
-After completing the assignment, be sure to push to Github and Heroku.
-Please answer the questions in this text file and submit it to I-Learn.
-
-1. Copy and paste the URL for your web application (e.g., Heroku):
-https://cse341-rodee-heroku.herokuapp.com/prove02
-2. Copy and paste the URL for your source code repository (e.g., GitHub):
-https://github.com/Rodeeo/CSE341-S2021.git
-3. Briefly list and describe the elements of the application that are functioning. 
-Adds books to a list and in the correct order
-4. Briefly describe any pieces of the assignment that are not yet working correctly.
-Saving the details in an array on localhost.
-5. Briefly describe the "coolest" thing you learned while completing this assignment.
-Heroku is finally working.
-6. If you could change this assignment to be more effective or helpful, what would you change?
-a live class on how to get heroku working. 
-7. Please select the category you feel best describes your assignment:
-   4 - Meets requirements
-
-8. Provide a brief justification (1-2 sentences) for selecting that category.
-It took everything I had just to get heroku working. I just didn't spend 20+ hours on it. </pre>
-</div>
-</body>
+  <div class="container">
+    <h5>Inventory Seach</h5>
+    <form class="taForm" action="/ta03/search" method="post">
+      <input name="searchValue">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <div class="container">
+    <div class="json">
+      <% items.filter(item => item.description.toLowerCase().includes(searchValue.toLowerCase()) || item.name.toLowerCase().includes(searchValue.toLowerCase())).forEach(item => {%>
+        <div class="stillBetterThanAmazon">
+          <h4 class="price">
+            $<%= item.price %>
+          </h4>
+          <img src="<%= item.imageUrl %>" alt="<%=item.name%>" width="250">
+          <h3><%= item.name %></h3>
+          <div class="description">
+            <%= item.description %>
+          </div>
+          <hr>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+  
+  
+  </body>
 </html>
