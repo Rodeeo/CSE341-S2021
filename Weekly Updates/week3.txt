@@ -1,0 +1,30 @@
+
+I appreciate you letting me get this back to you a second time. If you look I submiited the last one at 11:59pm.
+I had thought I already turned it in but I guess i didn't. I was SUPER scrambling to grab the week 3 and turn it in.
+Sorry. 
+
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-rodee-heroku.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Rodeeo/CSE341-S2021.git
+
+3. Briefly list and describe the elements of the application that are functioning. 
+I was able to add my own iventory.json and have the app search and pull product images and from it.
+This week wasnt too bad, But I feel like I'm going to pay for it in week 4. Calm before the storm.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+None, I was able to meet all rubric requirements.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+After dealing with a clunky PHP database if feels night to be able to deal with a simple sql that I have control over. 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I dont have any recommendations for this week. 
+
+7. Please select the category you feel best describes your assignment:
+   4 - Meets requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I was able to commit the time to make sure I covered every base in the rubric.
+Sadly, I did not have more time to go above and beyond the mark. 

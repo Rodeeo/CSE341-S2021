@@ -1,0 +1,29 @@
+Week4
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-rodee-heroku.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Rodeeo/CSE341-S2021.git
+
+3. Briefly list and describe the elements of the application that are functioning.
+I was able to get Mongodb database upand running. Both Atlas and Compass. Very neat.
+All CRUD is functioning you can add, edit, delete, and its assigned to the User. 
+You can even purchase the order and get a recipt. 
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+My time managemnent skils. This took 20+ hours to complete. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+Again, I love being able to fully control the database. Mongodb is cool mongoose is even slicker. 
+Atlast and Compass are impressive and I bet there are a thousand things it can do more. 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I would give anything just to have more time to learn. The acadimind was very time consuming. 
+BUT, i would not trade it. Very good info.
+
+7. Please select the category you feel best describes your assignment:
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Well, this week CSE341 got 80% of my time and attention. More than it should have.
+But, I am really enjoying it.
