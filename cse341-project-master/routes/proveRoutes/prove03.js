@@ -21,8 +21,8 @@ router.get('/', (req, res, next) => {
             items = (JSON.parse(data));
             res.render('pages/prove03', {
                 title: 'Prove 03',
-                path: '/controller/proveRoutes/prove03', // For pug, EJS
-                activeTA03: true, // For HBS
+                path: '/proveRoutes/prove03', // For pug, EJS
+               // activePROVE03: true, // For HBS
                 contentCSS: true, // For HBS
                 items: items,
                 searchValue: searchValue

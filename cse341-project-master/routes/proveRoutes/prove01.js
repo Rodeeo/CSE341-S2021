@@ -4,6 +4,9 @@ const router = express.Router();
 const bodyParser = require('body-parser'); 
 const users = ["User 1","User 2"];
 
+router.use(bodyParser.json())
+router.use(bodyParser.urlencoded({extended: true}))
+
 const requestHandler = (req, res)=> {
   const url = req.url;
   
@@ -12,7 +15,7 @@ const requestHandler = (req, res)=> {
     res.write('<head><title>Prove 01</title></head>');
     res.write('<body><h3><a href="users">Users</a></h3>');
     res.write('<h1>Enter a Username</h1>');
-    res.write('<main><form action="/create-user" method="POST">');
+    res.write('<main><form action="/proveRoutes/prove01/create-user" method="POST">');
     res.write('<label for="userName">Username: </label><br><input type="text" name="userName" id="userName">');
     res.write('<button type="submit">Add User</button></form></main>');   
     res.write('</body>');
@@ -34,7 +37,7 @@ const requestHandler = (req, res)=> {
     return res.end();
   }
 
-  if(url === '/create-user'){
+  if(url === '/proveRoutes/prove01/create-user'){
     const body = [];
     req.on('data', chunk => {
         body.push(chunk);

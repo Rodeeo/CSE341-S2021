@@ -6,8 +6,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blackBlueDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Blue/Black",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set ",
+      "description": "Blue/Black"
     },
     {
       "tags": [
@@ -16,8 +16,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blackDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Black/Silver",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Black/Silver"
     },
     {
       "tags": [
@@ -26,18 +26,18 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blackPinkDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Black/Pink",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Black/Pink"
     },
     {
       "tags": [
-        "Blue",
-        "Black"
+        "Black",
+        "White"
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blackWhiteDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Blue/Black",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Black/White"
     },
     {
       "tags": [
@@ -46,8 +46,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blueDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Black/Silver",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Black/Silver"
     },
     {
       "tags": [
@@ -55,8 +55,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blueDice2.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Blue",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Blue"
     },
     {
       "tags": [
@@ -65,8 +65,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blueGoldDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Blue/Gold",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Blue/Gold"
     },
     {
       "tags": [
@@ -75,8 +75,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/blueGreenDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Blue/Green",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Blue/Green"
     },
     {
       "tags": [
@@ -84,18 +84,18 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greenDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Green",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Green"
     },
     {
       "tags": [
         "Green",
-        "Black"
+        "White"
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greenDice2.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Green/Black",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Green/White"
     },
     {
       "tags": [
@@ -104,17 +104,18 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greenPurpleDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Green/Purple",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Green/Purple"
     },
     {
       "tags": [
-        "Grey"
+        "Grey",
+        "Yellow"
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greyDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Grey",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Grey/Yellow"
     },
     {
       "tags": [
@@ -123,8 +124,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greyRedDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Grey/Red",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Grey/Red"
     },
     {
       "tags": [
@@ -133,8 +134,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/greySilverDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Grey/Silver",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Grey/Silver"
     },
     {
       "tags": [
@@ -142,8 +143,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/orangeDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Orange",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Orange"
     },
     {
       "tags": [
@@ -151,8 +152,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/pinkDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Pink",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Pink"
     },
     {
       "tags": [
@@ -160,8 +161,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/purpleDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Purple",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Purple"
     },
     {
       "tags": [
@@ -170,8 +171,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/purpleGoldDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Purple/Gold",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Purple/Gold"
     },
     {
       "tags": [
@@ -180,8 +181,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/purpleYellowDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Purple/Yellow",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Purple/Yellow"
     },
     {
       "tags": [
@@ -190,8 +191,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/redBlackDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Red/Black",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Red/Black"
     },
     {
       "tags": [
@@ -200,8 +201,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/redBlueDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Red/Blue",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Red/Blue"
     },
     {
       "tags": [
@@ -209,8 +210,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/redDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Red",
-      "description": "enim corporis voluptatibus laudantium possimus alias dolorem voluptatem similique aut aliquam voluptatem voluptatem omnis id consequatur"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Red"
     },
     {
       "tags": [
@@ -218,8 +219,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/whiteDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set White",
-      "description": "totam at veritatis eligendi assumenda ex quia praesentium quibusdam ducimus"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "White"
     },
     {
       "tags": [
@@ -228,8 +229,8 @@
       ],
       "imageUrl": "https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/yellowGreenDice.jpg",
       "price": 9.99,
-      "name": "Mastercrafted Polyhedral Dice Set Yellow/Green",
-      "description": "vitae mollitia et in accusantium est voluptas officiis est non"
+      "title": "Mastercrafted Polyhedral Dice Set",
+      "description": "Yellow/Green"
     }
 
 

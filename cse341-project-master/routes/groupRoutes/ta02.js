@@ -1,6 +1,7 @@
 //TA02 PLACEHOLDER
 const express = require('express');
 const router = express.Router();
+const https = require('https');
 
 var userNames = ['Bob','Tom','Jack'];
 var error='';
@@ -9,8 +10,8 @@ router.get('/',(req, res, next) => {
         title: 'Team Activity 02', 
         userNames:userNames,
         error:error,
-        path: '/groupRoutes/ta02', // For pug, EJS 
-        activeTA03: true, // For HBS
+        path: '/ta02', // For pug, EJS 
+        activeTA02: true, // For HBS
         contentCSS: true, // For HBS
     });
 });
@@ -24,7 +25,7 @@ router.post('/addUser',(req, res, next) => {
         error='';
     }
 
-    res.redirect('/ta02');
+    res.redirect('/groupRoutes/ta02');
 });
 router.post('/removeUser',(req, res, next) => {
     let idx = userNames.indexOf(req.body.username);
@@ -35,7 +36,7 @@ router.post('/removeUser',(req, res, next) => {
         error = 'Username is not found'
     }
     
-    res.redirect('/ta02');
+    res.redirect('/groupRoutes/ta02');
 });
 
 module.exports = router;
