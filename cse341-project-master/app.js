@@ -31,7 +31,7 @@ const corsOptions = {
 
   
   const PORT = process.env.PORT || 5000; // So we can run on heroku || (OR) localhost:5000
-  const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://Tom:Tom123@rodeeo.jyeli.mongodb.net/Rodeeo?retryWrites=true&w=majority";
+  const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://Tom:Tom123@rodeeo.jyeli.mongodb.net/Rodeeo";
   
   const store = new MongoDBStore({
     uri: MONGODB_URL,

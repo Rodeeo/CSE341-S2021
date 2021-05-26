@@ -97,7 +97,7 @@ exports.postSignup = (req, res, next) => {
           res.redirect('/login');
           return transporter.sendMail({
             to: email,
-            from: 'kyle.mueller.custom.pcs@gmail.com',
+            from: 'bob.rodee.custom.pcs@gmail.com',
             subject: 'Account Created Successfully!',
             html: `<h1>Hello ${name}!</h1>\n<h1>Congrats on your new account!</h1>`
           });

@@ -24,7 +24,7 @@
     "mongoose": "^5.12.9",
     "nodemailer": "^6.6.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "pug": "^2.0.3"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
