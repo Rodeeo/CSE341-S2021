@@ -29,14 +29,16 @@ userSchema.methods.addToCart = function(product) {
   const cartProductIndex = this.cart.items.findIndex(cp => {
     return cp.productId.toString() === product._id.toString();
   });
+  let newQuantity = 1;
   const updatedCartItems = [...this.cart.items];
 
   if (cartProductIndex >= 0) {
+    newQuantity = this.cart.items[cartProductIndex].quantity + 1;
     updatedCartItems[cartProductIndex].quantity += 1;
   } else {
     updatedCartItems.push({
       productId: product._id,
-      quantity: 1
+      quantity: newQuantityc
     });
   }
   const updatedCart = {
