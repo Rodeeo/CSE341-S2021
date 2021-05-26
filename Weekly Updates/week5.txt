@@ -1,0 +1,31 @@
+Week5
+1. Copy and paste the URL for your web application (e.g., Heroku):
+https://cse341-rodee-heroku.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Rodeeo/CSE341-S2021.git
+
+3. Briefly list and describe the elements of the application that are functioning.
+Finally Got the auth token working and secured. 
+In the local view you can see the data passing properly. 
+Mongodb is now hashing the password properly and storing the session for each login. 
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+Its all fully functional right now. All peices are working
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I wouldnt say cool, but I am just humbled. I know i have a long way to go. I am very 
+happy to be learning this and I hope I can learn it well enough in the end. time is my enemy.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+I would not change anything. I would change my other classes I am taking. I will go into more detail
+In the sections below. 
+
+7. Please select the category you feel best describes your assignment:
+   5 - Shows creativity and excels above and beyond requirements
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+Well, as week 4 CSE341 got 80% of my time and attention the scales flopped the other way and the 
+piper was paid. My other course, i will not name, is a bad joke. It is requiring 20-30 hours a week 
+with multiple team meetings. I dont want to make excuses but its hurting the rest of my studies.
+I am asking for forgiveness on the latness of this turn in. I am doing all I can. 

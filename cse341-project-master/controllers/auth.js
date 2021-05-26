@@ -1,14 +1,13 @@
-require('dotenv').config();
 const bcrypt = require('bcryptjs');
-const nodemailer = require('nodemailer')
-const sendgridTransport = require('nodemailer-sendgrid-transport')
+const nodemailer = require('nodemailer');
+const sendgridTransport = require('nodemailer-sendgrid-transport');
 
 const User = require('../models/user');
-const API_KEY = process.env.SENDGRID_API_KEY;
 
-const transporter = nodemailer.createTransport(sendgridTransport({
-  auth: {
-    api_key: API_KEY
+const transporter = nodemailer.createTransport(
+  sendgridTransport({
+    auth: {
+    api_key: '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'
   }
 }))
 
@@ -73,7 +72,6 @@ exports.postLogin = (req, res, next) => {
 
 exports.postSignup = (req, res, next) => {
   const email = req.body.email;
-  const name = req.body.name;
   const password = req.body.password;
   const confirmPassword = req.body.confirmPassword;
   User.findOne({ email: email })
@@ -87,7 +85,6 @@ exports.postSignup = (req, res, next) => {
         .then(hashedPassword => {
           const user = new User({
             email: email,
-            name: name,
             password: hashedPassword,
             cart: { items: [] }
           });
@@ -97,9 +94,9 @@ exports.postSignup = (req, res, next) => {
           res.redirect('/login');
           return transporter.sendMail({
             to: email,
-            from: 'bob.rodee.custom.pcs@gmail.com',
+            from: 'rodeebob@gmail.com',
             subject: 'Account Created Successfully!',
-            html: `<h1>Hello ${name}!</h1>\n<h1>Congrats on your new account!</h1>`
+            html: '<h1>You successfully signed up!</h1>'
           });
         })
         .catch(err => {

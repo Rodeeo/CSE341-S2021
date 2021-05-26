@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  name: {
+  email: {
     type: String,
     required: true
   },
-  email: {
+  password: {
     type: String,
     required: true
   },
@@ -34,11 +34,11 @@ userSchema.methods.addToCart = function(product) {
 
   if (cartProductIndex >= 0) {
     newQuantity = this.cart.items[cartProductIndex].quantity + 1;
-    updatedCartItems[cartProductIndex].quantity += 1;
+    updatedCartItems[cartProductIndex].quantity = newQuantity;
   } else {
     updatedCartItems.push({
       productId: product._id,
-      quantity: newQuantityc
+      quantity: newQuantity
     });
   }
   const updatedCart = {

@@ -1,6 +1,5 @@
 const path = require('path');
 
-require('dotenv').config();
 const cors = require('cors')
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -84,22 +83,8 @@ app.use(authRoutes);
 app.use(errorController.get404);
 
 mongoose
-  .connect(
-    MONGODB_URL, options
-  )
-  .then(result => {
-    User.findOne().then(user => {
-      if (!user) {
-        const user = new User({
-          name: 'Rando',
-          email: 'Rando@email.com',
-          cart: {
-            items: []
-          }
-        });
-        user.save();
-      }
-    });
+  .connect(MONGODB_URL, options)
+    .then( result => { 
     app.listen(PORT);
   })
   .catch(err => {
