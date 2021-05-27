@@ -1,10 +1,6 @@
 <%- include('../includes/head.ejs') %>
-    
-</head>
-
-<body>
-    <%- include('../includes/header.ejs') %>
-<main>  
+<%- include('../includes/header.ejs') %>
+    <div class="hero-body">  
     <% if (prods.length > 0) { %>
         <div class="grid">
             <% for (let product of prods) { %>
@@ -33,5 +29,5 @@
         <% } else { %>
             <h1>No Products Found!</h1>
             <% } %>
-        </main>
+        </div>
         <%- include('../includes/footer.ejs') %>

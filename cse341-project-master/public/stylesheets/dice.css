@@ -309,8 +309,7 @@ label, input, submit {
     .mobile-nav__item {
       margin: 1rem;
       padding: 0;
-      background-color:transparent;
-      
+      background-color:transparent;      
     }
     
     .mobile-nav__item a,

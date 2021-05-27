@@ -1,13 +1,6 @@
-  
 <%- include('../includes/head.ejs') %>
-<link rel="stylesheet" href="/css/forms.css">
-<link rel="stylesheet" href="/css/auth.css">
-</head>
-
-<body>
 <%- include('../includes/header.ejs') %>
-
-<main>
+    <div class="hero-body">
     <% if (errorMessage) { %>
         <div class="user-message user-message--error"><%= errorMessage %></div>
     <% } %>
@@ -31,5 +24,5 @@
         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
         <button class="btn" type="submit">Signup</button>
     </form>
-</main>
+</div> 
 <%- include('../includes/footer.ejs') %>

@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+:root {
+    --dark: #202020;
+    --grey: #d7d7d7;
+    --yellow: #f9f148;
+    --red: #f94c48;
+    --blue: #303ca0;
+    --green: #66fb49;
+    --purple: #14032f;
+    --white: #f2f2f2;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: var(--dark);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--white);
+    margin: 0;
+    padding: 1em 0em;
+
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--green);
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: var(--dark);
+
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--yellow);
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: var(--dark);
+
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke-color: black;
+    text-align: start;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+
+}
+
+.home {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    color: var(--red);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--dark);
+    margin: 0;
+    padding: 1em 1em;
+    font-weight: 800;
+}
+
+.welcome {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: var(--green);
+    padding: 1em 1em;
+    font-weight: 800;
+}
+
+.hero .navbar {
+    background-color: #303ba05d;
+}
+
+.hero.is-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/diceWallpaper2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero .nav,
+.hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.hero .subtitle {
+    padding: 3rem 0;
+    line-height: 1.5;
+}
+
+.hero.is-info .navbar-menu {
+    background: #303ba05d;
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.navbar-burger span {
+    height: 3px;
+    width: 25px;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+
+.taForm {
+    max-width: 500px;
+    display: flex;
+    padding: 1em 1em 1em;
+    margin: 10px auto 10px;
+    flex-direction: column;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background: var(--purple);
+}
+
+.hero-body {
+    background: #14032f;
+    background: url(https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/diceWallpaper2.jpg);
+    height: 100vh;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.item {
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.itemheader,
+.itemcontent {
+    padding: 1rem;
+}
+
+.itemheader h1,
+.itemcontent h1,
+.itemcontent h2,
+.itemcontent p {
+    margin: 0;
+}
+
+.itemTitle {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.itemHeader,
+.itemContent {
+    background: var(--dark);
+    padding: 1rem;
+}
+
+.itemImage {
+    width: 100%;
+}
+
+.itemImage img {
+    width: 100%;
+}
+
+.itemButtons {
+    padding: 1rem;
+    text-align: center;
+}
+
+.itemButtons button,
+.itemButtons a {
+    margin: 0 0.25rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    border: 1px solid var(--dark);
+    color: var(--purple);
+    background: var(--grey);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.danger {
+    color: red;
+    border-color: red;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: var(--green);
+    color: var(--dark);
+}
+
+.login-form {
+    width: 20rem;
+    max-width: 90%;
+    color:var(--white);
+    margin: auto;
+    display: flex;
+  }
+
+  .cart__item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 40rem;
+    max-width: 90%;
+  }
+  
+  .cart__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin-bottom: 1rem;
+  }
+  
+  .cart__item h1,
+  .cart__item h2 {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+  }

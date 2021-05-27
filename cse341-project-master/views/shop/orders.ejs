@@ -4,7 +4,7 @@
 
 <body>
     <%- include('../includes/header.ejs') %>
-<main>  
+    <div class="hero-body"> 
         <% if (orders.length <= 0) { %>
             <h1>Nothing there!</h1>
         <% } else { %>
@@ -15,12 +15,15 @@
                         <ul class="orders__products">
                             <% order.products.forEach(p => { %>
                                 <li class="ordersProducts-item">
-                                    <%= p.quantity %>x
+                                    <%= p.quantity %>
                                     <img src="<%= p.product.imageUrl %>" alt="<%= p.product.title %>" class="constrained-height">
                                     <%= p.product.title %>
-                                </li>  <% }); %>
-                        </ul>
-                    </li> <% }); %>
-            </ul>  <% } %>
-    </main>
+                                </li> 
+                              <% }); %>
+                            </ul>
+                        </li>
+                     <% }); %>
+                </ul>  
+            <% } %>
+    </div>
  <%- include('../includes/footer.ejs') %>

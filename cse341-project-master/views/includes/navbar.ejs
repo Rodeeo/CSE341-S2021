@@ -1,89 +1,89 @@
-<div class="backdrop"></div>
-<header class="main-header">
-    <button id="toggleMenu">Menu</button>
-    <nav class="main-header__nav">
-        <ul class="main-header__item-list">
-            <li class="main-header__item">
-                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
-            </li>
-            <li class="main-header__item">
-                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
-            </li>
-            <% if (isAuthenticated) { %>
-                <li class="main-header__item">
-                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
-                    </a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
-                    </a>
-                </li>
-            <% } %>
-        </ul>
-        <ul class="main-header__item-list">
-            <% if (!isAuthenticated) { %>
-                <li class="main-header__item">
-                    <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
-                </li>
-            <% } else { %>
-                <li class="main-header__item">
-                    <form action="/logout" method="post">
-                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                        <a href='#' onclick='this.parentNode.submit(); return false;'>Logout</a>
-                    </form>
-                </li>
-            <% } %>
-        </ul>
-    </nav>
-</header>
+<body>
+    <section class="hero is-info">
 
-<nav class="mobile-nav">
-    <ul class="mobile-nav__item-list">
-        <li class="mobile-nav__item">
-            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
-        </li>
-        <li class="mobile-nav__item">
-            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
-        </li>
-        <% if (isAuthenticated) { %>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class= "<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
-                </a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
-                </a>
-            </li>
-        <% } %>
-        <% if (!isAuthenticated) { %>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/login' ? 'active' : '' %>" href="/login">Login</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">Signup</a>
-            </li>
-        <% } else { %>
-            <li class="mobile-nav__item">
-                <form action="/logout" method="post">
-                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                    <button type="submit">Logout</button>
-                </form>
-            </li>
-        <% } %>
-    </ul>
-</nav>
+<div class="hero-head">
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                    <img src="https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/dice-logo.jpg" alt="Logo">
+                    <h1 class="title">Dice Goblins</h1> </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+
+               <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                                <a class="<%= path === '/' ? 'active' : '' %> button is-white is-outlined" href="/">
+                                    <span class="icon">
+                                        <i class="fa fa-home"></i>
+                                    </span>
+                                    <span>Home</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="<%= path === '/products' ? 'active' : '' %> button is-white is-outlined" href="/products">
+                                    <span class="icon">
+                                        <i class="fa-fort-awesome"></i>
+                                    </span>
+                                    <span>Dice</span>
+                                </a>
+                            </span>
+                            <% if (isAuthenticated) { %>
+                            <span class="navbar-item">
+                                <a class="<%= path === '/cart' ? 'active' : '' %> button is-white is-outlined" href="/cart">
+                                    <span class="icon">
+                                        <i class="fa-shopping-cart"></i>
+                                    </span>
+                                    <span>Cart</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="<%= path === '/orders' ? 'active' : '' %> button is-white is-outlined" href="/orders">
+                                    <span class="icon">
+                                        <i class="fa-shopping-basket"></i>
+                                    </span>
+                                    <span>Orders</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="<%= path === '/admin/add-product' ? 'active' : '' %> button is-white is-outlined" href="/admin/add-product">
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>Add Product</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="<%= path === '/admin/products' ? 'active' : '' %> button is-white is-outlined" href="/admin/add-product">
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>Admin Products</span>
+                                </a>
+                              </span>  
+                            <% } %>
+                               <% if (!isAuthenticated) { %>
+                                    <span class="navbar-item">
+                                        <a class="<%= path === '/login' ? 'active' : '' %> button is-white is-outlined" href="/login">Login </a>
+                                    </span> 
+                                    <span class="navbar-item">
+                                        <a class="<%= path === '/signup' ? 'active' : '' %> button is-white is-outlined" href="/signup"> Signup</a>
+                                    </span>
+                                <% } else { %>
+                                    <span class="navbar-item">
+                                        <form action="/logout" method="post">
+                                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                                            <a class= "button is-white is-outlined" href='#' onclick='this.parentNode.submit(); return false;'>Logout</a>
+                                        </form>
+                                    </span>
+                                <% } %>                                                   
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>

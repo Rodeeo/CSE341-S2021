@@ -1,35 +1,16 @@
 <%- include('../includes/head.ejs') %>
-  
-</head>
+<%- include('../includes/header.ejs') %>
+<div class="hero-body is-fullheight">
+    <div class="container has-text-centered is-fullheight">
+        <div class="column is-6 is-offset-3 is-fullheight">
+            <h1 class="home">
+                Welcome <br>
+                Fellow Goblins!
+            </h1>
+            <h2 class="welcome">
+                You'll not find finer dice in all the land.
+            </h2>
+                        </div>
 
-<body>
-    <%- include('../includes/header.ejs') %>
-<main>         
-    <% if (prods.length > 0) { %>
-        <div class="grid">
-            <% for (let product of prods) { %>
-                <article class="card product-item">
-                    <header class="itemHeader">
-                        <h2 class="product__title"><%= product.title %></h2>
-                        <p><%= product.description %></p>
-                    </header>
-                    <div class="itemImage">
-                        <img src="<%= product.imageUrl %>"
-                            alt="<%= product.title %>">
-                    </div>
-                    <div class="itemContent">
-                        <h3 class="product__price">$<%= product.price %></h3>
-                    </div>
-                    <div class="itemButtons">
-                        <% if (isAuthenticated) { %>
-                            <%- include('../includes/add-to-cart.ejs', {product: product}) %>
-                        <% } %>
-                    </div>
-                </article>
-            <% } %>
-        </div>
-    <% } else { %>
-        <h1>No Products Found!</h1>
-    <% } %>
-</main>
-   <%- include('../includes/footer.ejs') %>
+            </div>
+</div>  
