@@ -1,25 +1,34 @@
 <%- include('../includes/head.ejs') %>
-<%- include('../includes/header.ejs') %>
+   
+</head>
+
+<body>
+    <%- include('../includes/header.ejs') %>
     <div class="hero-body"> 
         <% if (orders.length <= 0) { %>
             <h1>Nothing there!</h1>
-                <% } else { %>
-                    <ul class="orders">
-                        <% orders.forEach(order => { %>
-                            <li class="ordersItem">
-                                <h1>Order - # <%= order._id %></h1>
-                                    <ul class="orders__products">
-                                        <% order.products.forEach(p => { %>
-                                            <li class="ordersProducts-item">
-                                                <%= p.quantity %>
-                                                <img src="<%= p.product.imageUrl %>" alt="<%= p.product.title %>" class="constrained-height">
-                                                <%= p.product.title %>
-                                            </li> 
-                                        <% }); %>
-                                    </ul>
-                                </li>
-                            <% }); %>
-                        </ul>  
-                    <% } %>
-                </div>
+        <% } else { %>
+            <div>
+                <% orders.forEach(order => { %>
+                    <article class="itemProduct">
+                        <header class="itemHeader">
+                        <h2 class="title" >Order# <%= order._id %></h2>
+            
+                            <% order.products.forEach(p => { %>
+                                <div class="itemcontent"> 
+                                   <span><h3>Dice: <%= p.product.description %></h3></span>
+                                <span><h4>Total: <%= p.quantity %></h4></span>
+                            </div> 
+                            </header>
+                                    <div class="itemImage">
+                                        <img src="<%= p.product.imageUrl %>" alt="<%= p.product.title %>">
+                                    </div>
+                                
+                              <% }); %>
+                        
+                    </article>
+                     <% }); %>
+                        </div>
+            <% } %>
+    </div>
  <%- include('../includes/footer.ejs') %>

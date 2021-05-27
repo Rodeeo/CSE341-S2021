@@ -23,7 +23,7 @@
             <div class="centered">
                 <form action="/create-order" method="POST">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                    <button class="button is-white is-outlined" type="submit" > <span class="icon">
+                    <button class="button is-white is-outlined" type="submit" ><span class="icon">
                         <i class="far fa-share-square"></i>
                     </span>
                     <span>Place Order</span></a></button>
@@ -31,6 +31,6 @@
             </div>
             
         <% } else { %>
-            <h1>No Products in Cart!</h1>
+            <h1 class="centered">No Products in Cart!</h1>
         <% } %>
 <%- include('../includes/footer.ejs') %>
