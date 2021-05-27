@@ -8,19 +8,23 @@
                     <header class="itemHeader">
                         <h2 class="itemTitle">
                             <%= product.title %></h2>
+                            <div class="itemcontent">
                             <p class="itemDescription">
                                 <%= product.description %>
                             </p>
-                        
+                            <h3 class="price">$<%= product.price %></h3>
+                        </div>
                     </header>
                     <div class="itemImage">
                         <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
                     </div>
-                    <div class="itemContent">
-                        <h3 class="price">$<%= product.price %></h3>
-                    </div>
-                    <div class="itemButtons">
-                        <a href="/products/<%= product._id %>" class="btn">Details</a>
+                    <div class="itemcontent">                   
+                        <a class="<%= path === '/admin/add-product' ? 'active' : '' %> button is-white is-outlined" href="/products/<%= product._id %>">
+                            <span class="icon">
+                                <i class="fas fa-info"></i>
+                            </span>
+                            <span>Details</span>
+                        </a>
                         <%- include('../includes/add-to-cart.ejs', {product: product}) %>
                     </div>
                 </article>

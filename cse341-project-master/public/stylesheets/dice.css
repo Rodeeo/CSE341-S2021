@@ -168,7 +168,9 @@ label, input, submit {
     
     .footer {
       height: 4em;
-      background: var(--dark);
+      background: #14032f;
+    background: url('https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/diceWallpaper2.jpg') ;
+    background-size: cover;
       vertical-align: middle;
       display: flex;
     }

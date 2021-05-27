@@ -1,12 +1,7 @@
 <%- include('../includes/head.ejs') %>
- 
-</head>
-
-<body>
-    <%- include('../includes/navbar.ejs') %>
- 
-     <main>
-         <form class="product-form" action="/admin/<% if (editing) { %>edit-product<% } else { %>add-product<% } %>" method="POST">
+<%- include('../includes/navbar.ejs') %>
+<div class="hero-body"> 
+         <form class="login-form" action="/admin/<% if (editing) { %>edit-product<% } else { %>add-product<% } %>" method="POST">
              <div class="form-control">
                  <label for="title">Title</label>
                  <input type="text" name="title" id="title" value="<% if (editing) { %><%= product.title %><% } %>">
@@ -26,9 +21,13 @@
              <% if (editing) { %>
                  <input type="hidden" value="<%= product._id %>" name="productId">
              <% } %>
- 
              <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-             <button class="btn" type="submit"><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></button>
+             <button class="button is-white is-outlined" type="submit">
+                <span class="icon">
+                    <i class="fas fa-hammer"></i>
+                </span>
+                <span><% if (editing) { %>Update Product<% } else { %>Add Product<% } %></span>
+                </button>
          </form>
-     </main>
+        </div>
 <%- include('../includes/footer.ejs') %>

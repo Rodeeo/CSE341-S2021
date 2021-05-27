@@ -6,7 +6,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="../">
-                    <img src="https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/dice-logo.jpg" alt="Logo">
+                    <img src="https://rodeeo.github.io/CSE341-S2021/cse341-project-master/public/images/dice-logo.png" alt="Logo">
                     <h1 class="title">Dice Goblins</h1> </a>
                 <span class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
@@ -28,7 +28,7 @@
                             <span class="navbar-item">
                                 <a class="<%= path === '/products' ? 'active' : '' %> button is-white is-outlined" href="/products">
                                     <span class="icon">
-                                        <i class="fa-fort-awesome"></i>
+                                        <i class="fas fa-dice-d20"></i>
                                     </span>
                                     <span>Dice</span>
                                 </a>
@@ -37,7 +37,7 @@
                             <span class="navbar-item">
                                 <a class="<%= path === '/cart' ? 'active' : '' %> button is-white is-outlined" href="/cart">
                                     <span class="icon">
-                                        <i class="fa-shopping-cart"></i>
+                                        <i class="fas fa-shopping-cart"></i>
                                     </span>
                                     <span>Cart</span>
                                 </a>
@@ -45,7 +45,7 @@
                             <span class="navbar-item">
                                 <a class="<%= path === '/orders' ? 'active' : '' %> button is-white is-outlined" href="/orders">
                                     <span class="icon">
-                                        <i class="fa-shopping-basket"></i>
+                                        <i class="fas fa-shopping-basket"></i>
                                     </span>
                                     <span>Orders</span>
                                 </a>
@@ -53,32 +53,41 @@
                             <span class="navbar-item">
                                 <a class="<%= path === '/admin/add-product' ? 'active' : '' %> button is-white is-outlined" href="/admin/add-product">
                                     <span class="icon">
-                                        <i class="fa fa-github"></i>
+                                        <i class="fas fa-plus"></i>
                                     </span>
                                     <span>Add Product</span>
                                 </a>
                             </span>
                             <span class="navbar-item">
-                                <a class="<%= path === '/admin/products' ? 'active' : '' %> button is-white is-outlined" href="/admin/add-product">
+                                <a class="<%= path === '/admin/products' ? 'active' : '' %> button is-white is-outlined" href="/admin/products">
                                     <span class="icon">
-                                        <i class="fa fa-github"></i>
+                                        <i class="fas fa-user-shield"></i>
                                     </span>
-                                    <span>Admin Products</span>
+                                    <span>Admin</span>
                                 </a>
                               </span>  
                             <% } %>
                                <% if (!isAuthenticated) { %>
                                     <span class="navbar-item">
-                                        <a class="<%= path === '/login' ? 'active' : '' %> button is-white is-outlined" href="/login">Login </a>
+                                        <a class="<%= path === '/login' ? 'active' : '' %> button is-white is-outlined" href="/login">
+                                        <span class="icon">
+                                        <i class="fas fa-sign-in-alt"></i> </span>
+                                        <span>Login</span> </a>
                                     </span> 
                                     <span class="navbar-item">
-                                        <a class="<%= path === '/signup' ? 'active' : '' %> button is-white is-outlined" href="/signup"> Signup</a>
+                                        <a class="<%= path === '/signup' ? 'active' : '' %> button is-white is-outlined" href="/signup">
+                                        <span class="icon">
+                                        <i class="fas fa-user-plus"></i></span>
+                                        <span>Signup</span>   </a>                               
                                     </span>
                                 <% } else { %>
                                     <span class="navbar-item">
-                                        <form action="/logout" method="post">
+                                        <form  action="/logout" method="post">
                                             <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                                            <a class= "button is-white is-outlined" href='#' onclick='this.parentNode.submit(); return false;'>Logout</a>
+                                            <a class= "button is-white is-outlined" href='#' onclick='this.parentNode.submit(); return false;'>
+                                            <span class="icon">
+                                            <i class="fas fa-sign-out-alt"></i> </span>  
+                                            <span>Logout</span>  </a>  
                                         </form>
                                     </span>
                                 <% } %>                                                   

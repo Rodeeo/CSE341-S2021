@@ -1,13 +1,23 @@
 <%- include('../includes/head.ejs') %>
 <%- include('../includes/header.ejs') %>
     <div class="hero-body">  
-            <h2><%= product.title %></h2>
-            <p><%= product.description %></p>
-            <hr>
-            <div>
-                <img src="<%= product.imageUrl %>" alt="<%= product.title %>" class="constrained">
+        <article class="itemProduct">
+            <header class="itemHeader">
+                <h2 class="itemTitle">
+                    <%= product.title %></h2>
+                    <div class="itemcontent">
+                    <p class="itemDescription">
+                        <%= product.description %>
+                    </p>
+                    <h3 class="price">$<%= product.price %></h3>
+                </div>
+            </header>
+            <div class="itemImage">
+                <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
             </div>
-            <h2>$<%= product.price %></h2>
-            <%- include('../includes/add-to-cart.ejs') %>
+            <div class="itemcontent">                   
+                <%- include('../includes/add-to-cart.ejs', {product: product}) %>
+            </div>
+        </article>
         </div>
 <%- include('../includes/footer.ejs') %>
