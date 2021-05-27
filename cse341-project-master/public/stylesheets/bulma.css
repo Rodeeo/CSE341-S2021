@@ -121,7 +121,7 @@ h5 {
 }
 
 .navbar-item, .navbar-link {
-    padding: 1rem .2rem;
+    padding: .2rem .2rem;
 }
 
 .title {
@@ -163,6 +163,11 @@ h5 {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+.button.is-white.is-outlined:hover{
+    background-color:var(--yellow);
+    border-color: var(--dark);
 }
 
 .card {
