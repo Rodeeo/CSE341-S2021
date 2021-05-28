@@ -278,6 +278,35 @@ input, textarea {
     text-align: end;
 }
 
+/* .form-control {
+    margin: 1rem 0;
+  }
+  
+  .form-control label,
+  .form-control input,
+  .form-control textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+  } */
+  
+  .form-control input:focus,
+  .form-control textarea:focus {
+    outline-color: #00695c;
+  }
+  
+  .form-control input.invalid,
+  .form-control textarea.invalid {
+    border-color: red;
+  }
+
   .cart__item-list {
     list-style: none;
     margin: 0;
@@ -301,6 +330,22 @@ input, textarea {
     margin-right: 1rem;
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .user-message {
+    margin: auto;
+    width: 90%;
+    border: 1px solid var(--blue);
+    padding: 0.5rem;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .user-message--error {
+    border-color: var(--red);
+    color: var(--red);
+    font-weight: 800;
   }
 
 

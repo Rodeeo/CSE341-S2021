@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/header.ejs') %>
+    <div class="hero-body">
+        <% if (errorMessage) { %>
+            <div class="user-message user-message--error"><%= errorMessage %></div>
+        <% } %>
+        <form class="login-form" action="/reset" method="POST">
+            <div class="form-control">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <button class="button is-white is-outlined" type="submit" ><span class="icon">
+                <i class="fas fa-recycle"></i>
+            </span>
+            <span>Reset Password</span></a></button>
+        </form>
+</div> 
+<%- include('../includes/footer.ejs') %>

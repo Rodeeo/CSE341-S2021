@@ -1,6 +1,7 @@
 const path = require('path');
 
-const cors = require('cors')
+require('dotenv').config();
+const cors = require('cors') // Place this with other requires (like 'path' and 'express')
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -15,22 +16,21 @@ const User = require('./models/user')
 const app = express();
 
 const corsOptions = {
-    origin: "https://cse341-rodee-heroku.herokuapp.com",
-    optionsSuccessStatus: 200
-  };
-  app.use(cors(corsOptions));
-  
-  const options = {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    family: 4
-  };
+  origin: "https://kmpcs.herokuapp.com/",
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 
-  
-  const PORT = process.env.PORT || 5000; // So we can run on heroku || (OR) localhost:5000
-  const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://Tom:Tom123@rodeeo.jyeli.mongodb.net/Rodeeo";
+const options = {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  family: 4
+};
+
+const PORT = process.env.PORT || 5000; // So we can run on heroku || (OR) localhost:5000
+const MONGODB_URL  = 'mongodb+srv://Tom:Tom123@rodeeo.jyeli.mongodb.net/Rodeeo';
   
   const store = new MongoDBStore({
     uri: MONGODB_URL,
@@ -75,18 +75,19 @@ const corsOptions = {
     res.locals.csrfToken = req.csrfToken();
     next();
   });
-
-app.use('/admin', adminRoutes);
-app.use(shopRoutes);
-app.use(authRoutes);
-
-app.use(errorController.get404);
-
-mongoose
-  .connect(MONGODB_URL, options)
-    .then( result => { 
-    app.listen(PORT);
-  })
-  .catch(err => {
-    console.log(err);
-  });
+  
+  app.use('/admin', adminRoutes);
+  app.use(shopRoutes);
+  app.use(authRoutes);
+  
+  app.use(errorController.get404);
+  
+  mongoose
+    .connect(MONGODB_URL)
+    .then(result => {
+      app.listen(5000);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  
