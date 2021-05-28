@@ -16,7 +16,7 @@ const User = require('./models/user')
 const app = express();
 
 const corsOptions = {
-  origin: "https://kmpcs.herokuapp.com/",
+  origin: "https://cse341-rodee-heroku.herokuapp.com",
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -85,7 +85,7 @@ const MONGODB_URL  = 'mongodb+srv://Tom:Tom123@rodeeo.jyeli.mongodb.net/Rodeeo';
   mongoose
     .connect(MONGODB_URL)
     .then(result => {
-      app.listen(5000);
+      app.listen(PORT);
     })
     .catch(err => {
       console.log(err);
