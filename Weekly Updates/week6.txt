@@ -6,15 +6,22 @@ https://cse341-rodee-heroku.herokuapp.com/
 https://github.com/Rodeeo/CSE341-S2021.git
 
 3. Briefly list and describe the elements of the application that are functioning.
+Everything is working. Sanitation, Validation, User login specific opjects, full CSS remapping, 
+GTmetrix Grade:A Performance:97% Structure:90%, PageSpeed Insights 91, CSRF tokens, Hashed 12 Char Passwords, 
+All Flash Error codes working, reset passwords, MonkeyTest:Looking good, All browsers Desktop/Mobile, Favicon!,
+HTML/CSS validated, greyhairs: +10%
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
+nada, nothing, complete
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+im just enjoying the learning, I can't say its all cemented in my head, but I am learning. 
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
-
+A timeturner to give me more time in the day. 
 
 7. Please select the category you feel best describes your assignment:
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I remapped the site, it is now clean and themeatic. Made sure it is not just a copy paste. I am happy to have this week done. 
