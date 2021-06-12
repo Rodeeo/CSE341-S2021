@@ -3,22 +3,19 @@ After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application (e.g., Heroku):
-
+https://prove-rodee-cse341.herokuapp.com/
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/Rodeeo/CSE341-S2021.git
 3. Briefly list and describe the elements of the application that are functioning.
-
+Everything works, app loads from a JSON file and paginates 10 items at a time
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+had a hard time with the first and last commands		
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+i have very cool feelings about pagination. 
 6. If you could change this assignment to be more effective or helpful, what would you change?
-
+I dont know where this is useful. 
 7. Please select the category you feel best describes your assignment:
-   1 - Some attempt was made
-   2 - Developing, but significantly deficient
-   3 - Slightly deficient, but still mostly adequate
-   4 - Meets requirements
    5 - Shows creativity and excels above and beyond requirements
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I put in extra hours to make sure I fully understood the process and did everything to show it.
