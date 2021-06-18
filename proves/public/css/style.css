@@ -132,6 +132,13 @@
    -webkit-text-decoration-skip-ink: none;
    text-decoration-skip-ink: none;
  }
+
+ .pokemon {
+  text-align: center;
+  border: solid 2px #343a40;
+  background-color: #868e96;
+  color: white;
+}
  
  address {
    margin-bottom: 1rem;
@@ -3032,7 +3039,7 @@
  
  .btn-primary:hover {
    color: #fff;
-   background-color: #9a7400;
+   background-color: #0972AE;
    border-color: #941C2F;
  }
  

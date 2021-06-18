@@ -45,7 +45,7 @@ const renderIndex = async (req, res, json) => {
     numPages: Math.ceil(filteredData.length / ITEMS_PER_PAGE)
   }
 
-  res.render('shop/product-list', prove)
+  res.render('prove08/product-list', prove)
 }
 
 exports.getIndex = (req, res, next) => {
