@@ -1,19 +1,11 @@
 const express = require('express');
-const app = express()
 
-const controller = require('../controllers/prove09');
+const path = require('path');
 
-app.get('/prove09/', (req, res, next) => {
-    res.render('prove09/welcomePage');
-})
-.get('/pokemon/:page', (req, res, next) => {
-    const page = req.params.page;
-    controller.getPokemon(page, (pokemon) => {
-            res.render('prove09/poke', {
-                pokemonList: pokemon,
-                page: page
-            });
-    });
-});
+const prove09Controller = require('../controllers/prove09');
 
-module.exports = app;
+const router = express.Router();
+
+router.get('/prove09/', prove09Controller.getPokemon);
+
+module.exports = router;

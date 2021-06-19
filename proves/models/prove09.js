@@ -1,9 +1,32 @@
 const fetch = require('node-fetch');
 
-exports.getPokemon = (offset, callback) => {
-    fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`)
-        .then(response => response.json())
-        .then(data => {
-            callback(data.results);
-        });
-}
+const settings = {
+    method: "Get"
+};
+
+const getPokemonFromWeb = (url, cb) => {
+    fetch(url, settings)
+        .then(res => res.json())
+        .then((json) => {
+            if (!json) {
+                cb([]);
+            } else {
+                const pokemon = (json);
+                cb(pokemon);
+            }
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
+module.exports = class Pokemon {
+    constructor(name, url) {
+        this.name = name;
+        this.url = url;
+    }
+
+    static fetchAll(url, cb) {
+        getPokemonFromWeb(url, cb);
+    }
+};

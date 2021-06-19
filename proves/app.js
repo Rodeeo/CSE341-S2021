@@ -14,7 +14,7 @@ const options = {
 const app = express();
 
 const corsOptions = {
-    origin: "https://prove-rodee-cse341.herokuapp.com/",
+    origin: "https://cse341-proves-rodee.herokuapp.com/",
     optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));

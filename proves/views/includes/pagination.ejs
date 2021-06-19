@@ -1,15 +1,15 @@
-<section class="pagination">
-    <% if (currentPage !== 1 && previousPage !== 1) { %>
-        <a href="?page=1">1</a>
+<section class="pagination d-flex justify-content-between">
+    <%if(page != 1) { %>
+    <a class="btn btn-primary m-1"  href="/prove09/?page=1">First</a>
     <% } %>
-    <% if (hasPreviousPage) { %>
-        <a href="?page=<%= previousPage %>"><%= previousPage %></a>
+    <% if(hasPreviousPage && previousPage != 1) { %>
+    <a class="btn btn-primary m-1" href="/prove09/?page=<%= previousPage %>">Prev</a>
     <% } %>
-    <a href="?page=<%= currentPage %>" class="active"><%= currentPage %></a>
-    <% if (hasNextPage) { %>
-        <a href="?page=<%= nextPage %>"><%= nextPage %></a>
+    
+    <% if(hasNextPage && nextPage != lastPage) { %>
+    <a class="btn btn-primary m-1"  href="/prove09/?page=<%= nextPage %>">Next</a>
     <% } %>
-    <% if (lastPage !== currentPage && nextPage !== lastPage) { %>
-        <a href="?page=<%= lastPage %>"><%= lastPage %></a>
+    <% if(page != lastPage) { %>
+    <a class="btn btn-primary m-1"  href="/prove09/?page=<%= lastPage %>">Last</a>
     <% } %>
 </section>

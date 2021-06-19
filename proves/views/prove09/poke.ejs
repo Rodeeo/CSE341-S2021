@@ -1,20 +1,24 @@
 <%- include('../includes/head.ejs') %>
-  <%- include('../includes/header.ejs') %>
-    <div class="container">
-      <h1>Pokemon List</h1>
-      <div class="card border-primary m-2 col-md-3"  >
-        <div class="card-header text-center"><h4>gotta catch em all</h4></div>
-        <div class="card-body">
-      <div class="cardContainer mt-2 text-justify">
-        <ul id="pokeList" class="">
-        </ul>
-        </div>
-        <button class="btn btn-primary centered id="prevBtn">Previous</button>
-        <button class="btn btn-primary right id="nextBtn"> Next </button>
-      </div>
-    </div>
-
+<%- include('../includes/header.ejs') %>
+<div class="d-flex justify-content-center p-2">
+  <h1>Pokemon List: <a class="btn btn-info" href="/prove09/?page=<%= page %>"><%= page %></a> </h1>
 </div>
-    
+<div class="d-flex justify-content-center">
+  <div class="card border-primary  col-md-3">
+    <div class="card-header text-center">
+      <h4>gotta catch em all</h4>
     </div>
-    <%- include('../includes/footer.ejs') %>
+    <div class="card-body p-0">     
+        <% for (let list of pokemon.results) { %>
+        <article class="card pokemon-item">
+          <p class="card-text m-2 px-4 ">
+            <%= list.name[0].toUpperCase() + list.name.slice(1) %>
+          </p>
+        </article>
+        <% } %>      
+    </div>
+    <%- include('../includes/pagination.ejs') %>
+  </div>
+</div>
+
+<%- include('../includes/footer.ejs') %>
