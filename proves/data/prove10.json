@@ -1,43 +1,56 @@
 {
     "avengers": [
         {
-            "name": "Anthony Edward Stark"
+            "name": "Anthony Edward Stark",
+            "hero": "Ironman"
         },
         {
-            "name": "Steven Grant Rogers"
+            "name": "Steven Grant Rogers",
+            "hero": "Captain America"
         },
         {
-            "name": "Thor Odinson"
+            "name": "Thor Odinson",
+            "hero": "Thor"
         },
         {
-            "name": "Dr. Robert Bruce Banner"
+            "name": "Dr. Robert Bruce Banner",
+            "hero": "Hulk"
         },
         {
-            "name": "Natasha Alianovna Romanoff"
+            "name": "Natasha Alianovna Romanoff",
+            "hero": "Blackwidow"
         },
         {
-            "name": "Clinton Francis Barton"
+            "name": "Clinton Francis Barton",
+            "hero": "Hawkeye"
         },
         {
-            "name": "Peter Benjamin Parker"
+            "name": "Peter Benjamin Parker",
+            "hero": "Spiderman"
         },
         {
-            "name": "Scott Lang"
+            "name": "Scott Lang",
+            "hero": "Antman"
         },
         {
-            "name": "Wanda Maximoff"
+            "name": "Wanda Maximoff",
+            "hero": "Scarlet Witch"
         },
         {
-            "name": "Pietro Maximoff"
+            "name": "Pietro Maximoff",
+            "hero": "Quicksilver"
         },
         {
-            "name": "Stephen Vincent Strange"
+            "name": "Stephen Vincent Strange",
+            "hero": "Dr. Strange"
         },
         {
-            "name": "Carol Susan Jane Danvers"
+            "name": "Carol Susan Jane Danvers",
+            "hero": "Captain Marvel"
         },
         {
-            "name": "T'Challa"
+            "name": "T'Challa",
+            "hero": "Black Panther"
         }
     ]
 }

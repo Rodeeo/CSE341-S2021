@@ -24,7 +24,7 @@ const populateList = () => {
 
     data.then(json => {
         json.avengers.forEach(item => {
-            nameList.innerHTML += `<li class="list-group-item">${item.name}</li>`
+            nameList.innerHTML += `<li class="list-group-item">${item.hero} - ${item.name}</li>`
         })
     }).catch(err => {
         console.log(err, "EROOR EROOR EROOR");
