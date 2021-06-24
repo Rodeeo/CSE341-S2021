@@ -26,11 +26,13 @@ app.set('views', 'views');
 
 const shopRoutes = require('./routes/prove08');
 const pokeRoutes = require('./routes/prove09');
+const avengerRoutes = require('./routes/prove10');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(shopRoutes);
 app.use(pokeRoutes);
+app.use(avengerRoutes);
 
 app.listen(PORT);

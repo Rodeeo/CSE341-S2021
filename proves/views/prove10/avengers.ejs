@@ -1,0 +1,25 @@
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/header.ejs') %>
+<div class="d-flex justify-content-center p-2">
+  <h1>Operation Sheild</h1>
+</div>
+<div class="d-flex justify-content-center">
+  <div class="card border-primary  col-md-3">
+    <div class="card-header text-center">
+      <h4>Avengers</h4>
+    </div>
+    <div class="card-body p-2">     
+      <ul id="nameList" class="list-group">
+
+        </ul>
+        <form class="form-control-sm" >
+            <label for="newName">Name:</label>
+            <input type="text" id="newName">
+            <button id="submitName" onclick="submitName()">Submit</button>
+        </form>  
+        <br>   
+    </div>
+  </div>
+</div>
+<script src="../js/prove10.js"></script>
+<%- include('../includes/footer.ejs') %>

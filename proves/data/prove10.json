@@ -1,0 +1,43 @@
+{
+    "avengers": [
+        {
+            "name": "Anthony Edward Stark"
+        },
+        {
+            "name": "Steven Grant Rogers"
+        },
+        {
+            "name": "Thor Odinson"
+        },
+        {
+            "name": "Dr. Robert Bruce Banner"
+        },
+        {
+            "name": "Natasha Alianovna Romanoff"
+        },
+        {
+            "name": "Clinton Francis Barton"
+        },
+        {
+            "name": "Peter Benjamin Parker"
+        },
+        {
+            "name": "Scott Lang"
+        },
+        {
+            "name": "Wanda Maximoff"
+        },
+        {
+            "name": "Pietro Maximoff"
+        },
+        {
+            "name": "Stephen Vincent Strange"
+        },
+        {
+            "name": "Carol Susan Jane Danvers"
+        },
+        {
+            "name": "T'Challa"
+        }
+    ]
+}
