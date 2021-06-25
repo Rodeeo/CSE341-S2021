@@ -1,4 +1,4 @@
-Week 9
+Week 10
 After completing the assignment, be sure to push to Github and Heroku.
 Please answer the questions in this text file and submit it to I-Learn.
 
@@ -7,13 +7,14 @@ https://cse341-proves-rodee.herokuapp.com/
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
 https://github.com/Rodeeo/CSE341-S2021.git   /proves <---
 3. Briefly list and describe the elements of the application that are functioning.
-Everything is working, the pokemon list is pulling from the api, paginating 10 and clearing 
+Everything is working, the JSON is brought in and displayed correctly with extra styling,
+Extra Variables added, Each Heros Name and real name
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-I was able to get all parts working
+adding names in, not working 100%
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-api programing is somthing I have been waiting years to get into. we should spend 3 weeks mastering this. 
+why are there 100 ways to deal with arrays? its like rediculous. 
 6. If you could change this assignment to be more effective or helpful, what would you change?
-more time and focus on mastering API
+more time and focus on mastering API from last week. 
 7. Please select the category you feel best describes your assignment:
    5 - Shows creativity and excels above and beyond requirements
 8. Provide a brief justification (1-2 sentences) for selecting that category.
